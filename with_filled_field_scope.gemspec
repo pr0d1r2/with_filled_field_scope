@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{with_filled_field_scope}
-  s.version = "1.0.1"
+  s.version = "1.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcin Nowicki"]
@@ -22,10 +22,12 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
      "lib/with_filled_field_scope.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/with_filled_field_scope_spec.rb"
+     "spec/with_filled_field_scope_spec.rb",
+     "with_filled_field_scope.gemspec"
   ]
   s.homepage = %q{http://github.com/Pr0d1r2/with_filled_field_scope}
   s.rdoc_options = ["--charset=UTF-8"]

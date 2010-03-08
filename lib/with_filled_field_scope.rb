@@ -6,7 +6,7 @@ module ActiveRecord
   module WithFilledFieldScope
     module Base
 
-      FIELD_TYPES_SUPPORTING_ONLY_NOT_NULL = [:date, :decimal]
+      FIELD_TYPES_SUPPORTING_ONLY_NOT_NULL = [:date, :decimal, :boolean]
 
       def has_with_filled_field_scope(model = self)
         alias_scope :with_filled_field, lambda { |field|

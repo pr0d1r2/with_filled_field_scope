@@ -38,6 +38,11 @@ describe 'WithFilledFieldScopeModel' do
       WithFilledFieldScopeModel.field_support_not_blank?(:field).should be_false
     end
 
+    it 'should be false for boolean' do
+      WithFilledFieldScopeModel.should_receive(:field_column_type).with(:field).and_return(:boolean)
+      WithFilledFieldScopeModel.field_support_not_blank?(:field).should be_false
+    end
+
     it 'should be true for string' do
       WithFilledFieldScopeModel.should_receive(:field_column_type).with(:field).and_return(:string)
       WithFilledFieldScopeModel.field_support_not_blank?(:field).should be_true
