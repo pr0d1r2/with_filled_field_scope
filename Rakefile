@@ -11,6 +11,7 @@ begin
     gem.homepage = "http://github.com/Pr0d1r2/with_filled_field_scope"
     gem.authors = ["Marcin Nowicki"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "active_record_connectionless", ">= 1.0.2"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
